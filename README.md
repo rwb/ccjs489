@@ -112,10 +112,6 @@ boxplot(ymean,ymedian,names=c("sample mean","sample median"))
 >
 ```
 
-<p align="center">
-<img src="/gfiles/fig2.png" width="600px">
-</p>
-
 * This repeated sampling exercise yields an approximation to the *sampling distribution* of the two sets of estimates.
 * Both the sample mean and median seem to be *unbiased* (right on average) estimators of the population mean.
 * But the sample median has greater dispersion than the sample mean -- it is less *efficient*.
