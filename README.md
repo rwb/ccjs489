@@ -25,12 +25,6 @@ hist(y)
 > 
 ```
 
-* Here is the population histogram:
-
-<p align="center">
-<img src="/gfiles/fig1.png" width="600px">
-</p>
-
 * So far, all we've done is consider the population.
 * Now, let's draw a single sample, yss, of size 100 from the population -- with replacement.
 
