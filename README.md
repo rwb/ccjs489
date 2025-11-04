@@ -1,3 +1,5 @@
+#### Bias and Efficiency
+
 * An estimator is a formula or way of calculating some scientifically interesting quantity.
 * Estimators are used to calculate estimates (sometimes people say "estimand").
 * Scientists must attend to the properties of the estimators they use for describing phenomena and developing inferences.
@@ -112,6 +114,8 @@ boxplot(ymean,ymedian,names=c("sample mean","sample median"))
 >
 ```
 
+#### Bias and Efficiency
+
 * This repeated sampling exercise yields an approximation to the *sampling distribution* of the two sets of estimates.
 * Both the sample mean and median seem to be *unbiased* (right on average) estimators of the population mean.
 * But the sample median has greater dispersion than the sample mean -- it is less *efficient*.
@@ -154,6 +158,8 @@ sum(dmedian^2)/1e5
 > 
 ```
 
+#### Confidence Interval for a Sample Mean
+
 * Now, let's think about a 90% confidence interval for the sample mean.
 * We can calculate this interval for a single sample using the following approach:
 
@@ -163,9 +169,9 @@ mean(yss)
 sd(yss)
 se.meanyss <- sd(yss)/sqrt(100)
 se.meanyss
-p5 <- qnorm(p=0.05,mean=0,sd=1)
+p5 <- qt(p=0.05,df=100-1)
 p5
-p95 <- qnorm(p=0.95,mean=0,sd=1)
+p95 <- qt(p=0.05,df=100-1)
 p95
 lcl <- mean(yss)+p5*se.meanyss
 lcl
